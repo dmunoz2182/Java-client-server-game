@@ -53,9 +53,7 @@ Client
 ![Client window](screenshots/ClientStart.png)
 
 Gameplay
-![GameplayStart window](screenshots/GameplayStart.png)
 ![GameplayRound window](screenshots/GameplayRound.png)
-![Win window](screenshots/WinScreen.png)
 
 Requirements
 - Java 17 or newer
