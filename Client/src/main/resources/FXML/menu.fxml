@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuController">
+   <children>
+      <Label alignment="CENTER" layoutX="216.0" layoutY="14.0" prefHeight="30.0" prefWidth="165.0" text="Shot in the dark">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="96.0" layoutY="60.0" prefHeight="26.0" prefWidth="66.0" text="Attempts" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="169.0" layoutY="63.0" text="#">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="animalButton" layoutX="256.0" layoutY="89.0" mnemonicParsing="false" onAction="#animButton" text="Animals" textFill="#c71a1a">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="brandButton" layoutX="258.0" layoutY="152.0" mnemonicParsing="false" onAction="#braButton" text="Brands" textFill="#1b19ba">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="moviesButton" layoutX="257.0" layoutY="214.0" mnemonicParsing="false" onAction="#movButton" text="Movies" textFill="#30be2d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="33.0" layoutY="254.0" text="Notes">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="animalLives" layoutX="197.0" layoutY="94.0" text="">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="brandLives" layoutX="197.0" layoutY="158.0" text="">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="movieLives" layoutX="197.0" layoutY="220.0" text="">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="272.0" text="- You have 3 chances for each category" />
+      <Label layoutX="43.0" layoutY="293.0" text="- When playing the game the letters you get right won't affect the amount of tries you have left" />
+      <Label layoutX="43.0" layoutY="315.0" text="- When the game is over you will have to either close the game or have the option to start over again" />
+      <Label fx:id="overallLose" alignment="CENTER" layoutX="104.0" layoutY="272.0" opacity="0.0" prefHeight="59.0" prefWidth="413.0" text="YOU RAN OUT OF LIVES" textFill="#aa1515">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="overallWin" layoutX="116.0" layoutY="262.0" opacity="0.0" text="YOU WIN THE GAME" textFill="#3ff61e">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="leaveG" disable="true" layoutX="70.0" layoutY="150.0" mnemonicParsing="false" onAction="#setLeaveG" opacity="0.0" text="Exit game" />
+      <Button fx:id="runAgain" disable="true" layoutX="479.0" layoutY="150.0" mnemonicParsing="false" onAction="#setPlayAgain" opacity="0.0" text="play again" />
+      <Text fx:id="roundWinL" fill="#32f43b" fontSmoothingType="LCD" layoutX="367.0" layoutY="91.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You win the round chose from the remaining categories to win" wrappingWidth="174.8900146484375">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="roundLossL" fill="#aa0e0e" layoutX="367.0" layoutY="183.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You lose the round, either try again or chose a different category with the remaining lives you have" wrappingWidth="189.63217163085938">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Label layoutX="43.0" layoutY="332.0" text="- when you win a category the catergory becomes disabled and you have to chose a different one" />
+      <Label layoutX="43.0" layoutY="349.0" text="- Win each category and you win" />
+
+   </children>
+</AnchorPane>
