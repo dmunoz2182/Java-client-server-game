@@ -47,15 +47,15 @@ The client:
 Screenshots: 
 
 Server
-screenshots/ServerStart.png
+![Server window](screenshots/ServerStart.png)
 
 Client
-screenshots/ClientStart.png
+![Client window](screenshots/ClientStart.png)
 
 Gameplay
-screenshots/GameplayStart.png
-screenshots/GameplayRound.png
-screenshots/WinScreen.png
+![GameplayStart window](screenshots/GameplayStart.png)
+![GameplayRound window](screenshots/GameplayRound.png)
+![Win window](screenshots/WinScreen.png)
 
 Requirements
 - Java 17 or newer
